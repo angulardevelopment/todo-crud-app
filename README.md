@@ -5,11 +5,10 @@ Todo App
 
 <p align="center">
 <a href="#">
-<img src="../src/assets/Capture.png"  alt="app"/>
+<img src="src/assets/Capture.PNG"  alt="app"/>
 </a>
 </p>
 
-<img align="left" src="http://estruyf-github.azurewebsites.net/api/VisitorHit?user=sunny7899&repo=todo-crud-app&countColorcountColor&countColor=%237B1E7B"/>
 <img align="right" src="https://img.shields.io/github/repo-size/sunny7899/todo-crud-app?style=for-the-badge&logo=appveyor" alt="GitHub repo size"/>
 
 <img align="right" alt="todo-crud-app" src="https://socialify.git.ci/sunny7899/todo-crud-app/image?font=Inter&forks=1&issues=1&logo=https%3A%2F%2Fencrypted-tbn0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcT3XNTrF7bUh1kkqV4M7IacbSBLCqgmDAhyVV-Nf7X6nlWhB4eL4-7CfDPaxC0LmyEqX6o%26usqp%3DCAU&name=1&owner=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Dark" />
