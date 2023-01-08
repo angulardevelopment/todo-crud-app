@@ -5,7 +5,7 @@ Todo App
 
 <p align="center">
 <a href="#">
-<img src="src/assets/Capture.png"  alt="app"/>
+<img src="../src/assets/Capture.png"  alt="app"/>
 </a>
 </p>
 
@@ -18,7 +18,7 @@ Todo App
 <img src="https://forthebadge.com/images/badges/built-with-love.svg" alt=" forks"/>
 </p>
 
-#### Link for [demo](#) 
+#### Link for [demo](https://todo-crud-app-orpin.vercel.app/) 
 [![Generic badge](https://img.shields.io/badge/view-demo-orange)](#)
 
 
@@ -55,8 +55,6 @@ vscode
 https://github.com/sunny7899/todo-crud-app
 ## Duration
 1 Day
-
-
 
 ```bash
 
