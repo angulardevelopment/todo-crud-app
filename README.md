@@ -23,6 +23,20 @@ I'm Sam, and I'm passionate about product engineering and web development. I cre
 Todo App to add the notes.
 - simple CRUD app to list, add, remove car number plates with their owner names.
 - Added some validations: car number plate validation (total 6 chars - first 3 - letters A-Z, last 3 numbers), only unique car number plates are allowed;
+Todo App-
+
+What you will learn:
+
+Creating new tasks.
+
+Validating fields.
+
+Filtering tasks (completed, active, all).
+
+Make use of filter and reduce functions.
+
+fundamentals concepts of Javascript.
+
 
 ## Subscribe and Stay Updated!
 
