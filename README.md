@@ -37,6 +37,7 @@ Make use of filter and reduce functions.
 
 fundamentals concepts of Javascript.
 
+A-Z alphabets list with counting
 
 ## Subscribe and Stay Updated!
 
