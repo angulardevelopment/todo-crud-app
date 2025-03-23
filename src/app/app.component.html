@@ -1,62 +1,27 @@
-<mat-toolbar color="primary">
-  <span>Crud Application</span>
-  <span class="example-spacer"></span>
-  <button mat-raised-button (click)="openAddEditCarForm()">
-    ADD CAR DETAILS
-  </button>
-</mat-toolbar>
+<app-home></app-home>
 
 
-
-<div class="main-body">
-
-  <mat-form-field>
-    <mat-label>Filter</mat-label>
-    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
-  </mat-form-field>
-
-  <div class="table-container">
-    <table mat-table [dataSource]="dataSource" matSort>
-
-      <!-- ID Column -->
-      <ng-container matColumnDef="id">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
-        <td mat-cell *matCellDef="let row"> {{row.id}} </td>
-      </ng-container>
-
-      <!-- Progress Column -->
-      <ng-container matColumnDef="carNumber">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> Car Number</th>
-        <td mat-cell *matCellDef="let row"> {{row.carNumber}}</td>
-      </ng-container>
-
-      <ng-container matColumnDef="ownerName">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> Owner Name </th>
-        <td mat-cell *matCellDef="let row"> {{row.ownerName}}</td>
-      </ng-container>
-
-
-      <ng-container matColumnDef="action">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> Action </th>
-        <td mat-cell *matCellDef="let row">
-          <button mat-icon-button color="primary" (click)="openEditForm(row)">
-            <mat-icon>edit</mat-icon>
-          </button>
-          <button mat-icon-button color="warn" (click)="deleteCar(row.id)">
-            <mat-icon>delete</mat-icon>
-          </button>
-        </td>
-      </ng-container>
-
-      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-
-      <!-- Row shown when there is no matching data. -->
-      <tr class="mat-row" *matNoDataRow>
-        <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
-      </tr>
-    </table>
-
-    <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
-  </div>
-</div>
+    <ul>
+        <li><strong>CRUD App project features/Operations:</strong></li>
+        <ul>
+          <li>List car number plates with their owner names.</li>
+          <li>Add new car number plates.</li>
+          <li>Remove existing car number plates.</li>
+          <li>Update existing car number plates.</li>
+          <li>View car number plate details.</li>
+        </ul>
+        <li><strong>Validations:</strong></li>
+        <ul>
+          <li>Car number plate validation (must be exactly 6 characters: first 3 letters (A-Z), last 3 numbers).</li>
+          <li>Only unique car number plates are allowed.</li>
+        </ul>
+        <li><strong>Future features to be added:</strong></li>
+        <ul>
+          <li>Owner name validation (must be at least 3 characters).</li>
+          <li>Clear all car number plates.</li>
+          <li>Save records to local storage.</li>
+          <li>Integration with a backend server.</li>  
+        </ul>
+      </ul>
+      
+    

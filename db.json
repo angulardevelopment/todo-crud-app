@@ -1,0 +1,56 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "title": "John's First Post",
+      "content": "This is John's first post."
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "title": "John's Second Post",
+      "content": "This is John's second post."
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "title": "Jane's First Post",
+      "content": "This is Jane's first post."
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@example.com"
+    },
+    {
+      "id": 2,
+      "name": "Jane Doe",
+      "email": "jane@example.com"
+    }
+  ],
+  "cars": [
+    {
+      "id": 1,
+      "carNumber": "abc123",
+      "ownerName": "X7"
+    },
+    {
+      "id": 2,
+      "carNumber": "xyz123",
+      "ownerName": "Q7"
+    }
+  ]
+}

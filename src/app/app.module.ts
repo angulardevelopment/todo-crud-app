@@ -28,9 +28,10 @@ import { EffectsModule } from "@ngrx/effects";
 import { StoreDevtoolsModule } from "@ngrx/store-devtools";
 
 import { reducers, metaReducers } from "./core/core.reducers";
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [AppComponent, CarAddEditComponent],
+  declarations: [AppComponent, CarAddEditComponent, HomeComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

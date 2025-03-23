@@ -6,6 +6,7 @@ import { CoreService } from '../core/core.service';
 import { CarItem } from '../models/car';
 import { addCarItemFormSubmitted, editCarItemFormSubmitted } from '../store/cars.actions';
 import { selectCarItems } from '../store/cars.selector';
+import { CarService } from '../cars.service';
 
 @Component({
   selector: 'app-car-add-edit',
@@ -22,7 +23,8 @@ export class CarAddEditComponent implements OnInit {
     private _dialogRef: MatDialogRef<CarAddEditComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any,
     private _coreService: CoreService,
-    private store: Store
+    private store: Store,
+    // private carService: CarService
 
   ) {
     this.carForm = this._fb.group({
@@ -30,7 +32,7 @@ export class CarAddEditComponent implements OnInit {
       ownerName: ''
     });
     (this.carForm.get('carNumber') as FormControl).setValidators([
-      Validators.pattern(/^[a-zA-Z]{3}\d{3}$/)
+      Validators.pattern(/^[a-zA-Z]{3}\d{3}$/) //abc123 XYZ456
     ]);
 
 
@@ -56,6 +58,11 @@ export class CarAddEditComponent implements OnInit {
         );
         this._coreService.openSnackBar('Details updated!');
         this._dialogRef.close(true);
+
+        // this.carService.patchCarDetails(this.data.id, {
+        //   ...this.carForm.value}).subscribe((res) => {
+        //   console.log(res, 'res');
+        //   })
       } else {
         console.log('add');
         this.store.dispatch(
@@ -65,8 +72,17 @@ export class CarAddEditComponent implements OnInit {
         )
         this._coreService.openSnackBar('Details added successfully');
         this._dialogRef.close(true);
+
+        // this.carService.addCarDetails({
+        //   ...this.carForm.value,
+        //   id: 3,
+        // }).subscribe((res) => {
+        //   console.log(res, 'res');  
+        // })
       }
     }
+
+
   }
 
   async getList() {
