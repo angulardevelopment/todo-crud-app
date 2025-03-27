@@ -1,0 +1,45 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0" version="26.1.1">
+  <diagram id="xouH_qLp2EitbVn4Wkbi" name="Page-1">
+    <mxGraphModel dx="786" dy="511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="1JWGINGJR1774hv97KHC-1" value="cars.state.ts" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="540" y="10" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1JWGINGJR1774hv97KHC-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1JWGINGJR1774hv97KHC-3" target="1JWGINGJR1774hv97KHC-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1JWGINGJR1774hv97KHC-3" value="cars.selector.ts" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="90" width="60" height="30" as="geometry" />
+        </mxCell>
+        <UserObject label="cars.reducer.ts" link="cars.reducer.ts" id="1JWGINGJR1774hv97KHC-4">
+          <mxCell style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+            <mxGeometry x="350" y="140" width="60" height="30" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="1JWGINGJR1774hv97KHC-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1JWGINGJR1774hv97KHC-5" target="1JWGINGJR1774hv97KHC-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1JWGINGJR1774hv97KHC-5" value="cars.actions.ts" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="260" width="85" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1JWGINGJR1774hv97KHC-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1JWGINGJR1774hv97KHC-6" target="1JWGINGJR1774hv97KHC-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1JWGINGJR1774hv97KHC-6" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Components&lt;/h1&gt;&lt;p&gt;car-add-edit.component.ts&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="215" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="1JWGINGJR1774hv97KHC-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1JWGINGJR1774hv97KHC-9" target="1JWGINGJR1774hv97KHC-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1JWGINGJR1774hv97KHC-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="1JWGINGJR1774hv97KHC-9" target="1JWGINGJR1774hv97KHC-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1JWGINGJR1774hv97KHC-9" value="Store- app module" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="10" width="110" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
