@@ -9,9 +9,10 @@ import { selectCarItems } from '../store/cars.selector';
 import { CarService } from '../cars.service';
 
 @Component({
-  selector: 'app-car-add-edit',
-  templateUrl: './car-add-edit.component.html',
-  styleUrls: ['./car-add-edit.component.scss'],
+    selector: 'app-car-add-edit',
+    templateUrl: './car-add-edit.component.html',
+    styleUrls: ['./car-add-edit.component.scss'],
+    standalone: false
 })
 export class CarAddEditComponent implements OnInit {
   carForm: FormGroup;

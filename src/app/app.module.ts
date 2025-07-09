@@ -58,7 +58,7 @@ import { HomeComponent } from './home/home.component';
       }),
       StoreDevtoolsModule.instrument({
         maxAge: 25
-      }),
+      , connectInZone: true}),
 
   ],
   providers: [],
