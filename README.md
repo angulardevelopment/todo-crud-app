@@ -39,6 +39,11 @@ fundamentals concepts of Javascript.
 
 A-Z alphabets list with counting
 
+### Repos url
+- [ngrx-state-management](https://github.com/angulardevelopment/ngrx-state-management.git)
+- [movie](https://github.com/angulardevelopment/movie.git)
+- [todo app](https://github.com/angulardevelopment/todo-crud-app.git)
+
 ## Subscribe and Stay Updated!
 
 Don't miss out on new videos! Subscribe to my channel and hit the notification bell 🔔 to receive updates whenever I upload fresh content. Let's learn, laugh, and explore together!
