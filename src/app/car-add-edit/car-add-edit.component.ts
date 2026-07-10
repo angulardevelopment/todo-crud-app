@@ -1,18 +1,22 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { FormBuilder, FormControl, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
+import { MatDialogRef, MAT_DIALOG_DATA, MatDialogTitle, MatDialogContent, MatDialogActions, MatDialogClose } from '@angular/material/dialog';
 import { Store } from '@ngrx/store';
 import { CoreService } from '../core/core.service';
 import { CarItem } from '../models/car';
 import { addCarItemFormSubmitted, editCarItemFormSubmitted } from '../store/cars.actions';
 import { selectCarItems } from '../store/cars.selector';
 import { CarService } from '../cars.service';
+import { CdkScrollable } from '@angular/cdk/scrolling';
+import { MatFormField, MatLabel } from '@angular/material/form-field';
+import { MatInput } from '@angular/material/input';
+import { MatButton } from '@angular/material/button';
 
 @Component({
     selector: 'app-car-add-edit',
     templateUrl: './car-add-edit.component.html',
     styleUrls: ['./car-add-edit.component.scss'],
-    standalone: false
+    imports: [MatDialogTitle, ReactiveFormsModule, CdkScrollable, MatDialogContent, MatFormField, MatLabel, MatInput, MatDialogActions, MatButton, MatDialogClose]
 })
 export class CarAddEditComponent implements OnInit {
   carForm: FormGroup;

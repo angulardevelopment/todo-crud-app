@@ -1,21 +1,26 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, Inject, inject, OnInit, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { CarAddEditComponent } from '../car-add-edit/car-add-edit.component';
 import { MatPaginator } from '@angular/material/paginator';
-import { MatSort } from '@angular/material/sort';
-import { MatTableDataSource } from '@angular/material/table';
+import { MatSort, MatSortHeader } from '@angular/material/sort';
+import { MatTableDataSource, MatTable, MatColumnDef, MatHeaderCellDef, MatHeaderCell, MatCellDef, MatCell, MatHeaderRowDef, MatHeaderRow, MatRowDef, MatRow, MatNoDataRow } from '@angular/material/table';
 import { CoreService } from '../core/core.service';
 import { Store } from "@ngrx/store";
 import { appLoaded, deleteCarItemInitiated, editCarItemFormSubmitted } from '../store/cars.actions';
 import { selectCarItems } from '../store/cars.selector';
 import { CarItem } from '../models/car';
 import { CarService } from '../cars.service';
+import { MatToolbar } from '@angular/material/toolbar';
+import { MatButton, MatIconButton } from '@angular/material/button';
+import { MatFormField, MatLabel } from '@angular/material/form-field';
+import { MatInput } from '@angular/material/input';
+import { MatIcon } from '@angular/material/icon';
 
 @Component({
     selector: 'app-home',
     templateUrl: './home.component.html',
     styleUrls: ['./home.component.scss'],
-    standalone: false
+    imports: [MatToolbar, MatButton, MatFormField, MatLabel, MatInput, MatTable, MatSort, MatColumnDef, MatHeaderCellDef, MatHeaderCell, MatSortHeader, MatCellDef, MatCell, MatIconButton, MatIcon, MatHeaderRowDef, MatHeaderRow, MatRowDef, MatRow, MatNoDataRow, MatPaginator]
 })
 export class HomeComponent {
   displayedColumns: string[] = [
@@ -30,7 +35,7 @@ export class HomeComponent {
   @ViewChild(MatSort) sort!: MatSort;
 
   constructor(
-    private _dialog: MatDialog,
+    @Inject(MatDialog) private _dialog: MatDialog,
     private _coreService: CoreService,
     private store: Store,
     // private carService: CarService
